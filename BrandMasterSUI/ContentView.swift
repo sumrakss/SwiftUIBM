@@ -17,7 +17,7 @@ struct ContentView: View {
                     Text("Расчёты")
             }.tag(0)
             
-            Text("Settings")
+            SettingsScreen()
                 .tabItem {
                     Image(systemName: "2.circle")
                     Text("Настройки")

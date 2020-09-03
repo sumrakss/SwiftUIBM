@@ -30,14 +30,13 @@ struct MainScreen: View {
     
     var body: some View {
             NavigationView {
-                List {
+                Form {
                     Section {
                         Toggle(
                             isOn: $isOnFire,
                             label: {
                                 Text(isOnFire ? "Очаг - поиск" : "Очаг - обнаружен")
-                        }
-                        ).onTapGesture {
+                        }).onTapGesture {
                             
                         }
                         
@@ -45,8 +44,7 @@ struct MainScreen: View {
                             isOn: $isOnHard,
                             label: {
                                 Text(isOnHard ? "Условия - сложные" : "Условия - нормальные")
-                        }
-                        ).onTapGesture {
+                        }).onTapGesture {
                             
                         }
                         
@@ -83,9 +81,7 @@ struct MainScreen: View {
                         }
                     }
                     
-                    Section(header: Text("ДАВЛЕНИЕ В ЗВЕНЕ")
-                        .font(.callout)
-                        .frame(height: 90)) {
+                    Section(header: Text("Давление в звене")) {
                             
                             Stepper("Состав звена", value: $teamSize, in: 2...5)
                             
