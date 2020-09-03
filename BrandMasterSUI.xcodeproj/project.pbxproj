@@ -10,10 +10,14 @@
 		88C9911B24FFC9DC00AEB09E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C9911A24FFC9DC00AEB09E /* AppDelegate.swift */; };
 		88C9911D24FFC9DC00AEB09E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C9911C24FFC9DC00AEB09E /* SceneDelegate.swift */; };
 		88C9912024FFC9DC00AEB09E /* BrandMasterSUI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 88C9911E24FFC9DC00AEB09E /* BrandMasterSUI.xcdatamodeld */; };
-		88C9912224FFC9DC00AEB09E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C9912124FFC9DC00AEB09E /* ContentView.swift */; };
+		88C9912224FFC9DC00AEB09E /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C9912124FFC9DC00AEB09E /* MainScreen.swift */; };
 		88C9912424FFC9F000AEB09E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88C9912324FFC9F000AEB09E /* Assets.xcassets */; };
 		88C9912724FFC9F000AEB09E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88C9912624FFC9F000AEB09E /* Preview Assets.xcassets */; };
 		88C9912A24FFC9F000AEB09E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88C9912824FFC9F000AEB09E /* LaunchScreen.storyboard */; };
+		88FF49C625008F9900B14A3F /* TeamSizeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FF49C525008F9900B14A3F /* TeamSizeCell.swift */; };
+		88FF49C82500911E00B14A3F /* TeamSizeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FF49C72500911E00B14A3F /* TeamSizeItem.swift */; };
+		88FF49CA250095A800B14A3F /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FF49C9250095A800B14A3F /* Settings.swift */; };
+		88FF49CF2500987300B14A3F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FF49CE2500987300B14A3F /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +25,15 @@
 		88C9911A24FFC9DC00AEB09E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88C9911C24FFC9DC00AEB09E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		88C9911F24FFC9DC00AEB09E /* BrandMasterSUI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BrandMasterSUI.xcdatamodel; sourceTree = "<group>"; };
-		88C9912124FFC9DC00AEB09E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		88C9912124FFC9DC00AEB09E /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		88C9912324FFC9F000AEB09E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88C9912624FFC9F000AEB09E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		88C9912924FFC9F000AEB09E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88C9912B24FFC9F000AEB09E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88FF49C525008F9900B14A3F /* TeamSizeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamSizeCell.swift; sourceTree = "<group>"; };
+		88FF49C72500911E00B14A3F /* TeamSizeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamSizeItem.swift; sourceTree = "<group>"; };
+		88FF49C9250095A800B14A3F /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		88FF49CE2500987300B14A3F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +68,10 @@
 			children = (
 				88C9911A24FFC9DC00AEB09E /* AppDelegate.swift */,
 				88C9911C24FFC9DC00AEB09E /* SceneDelegate.swift */,
-				88C9912124FFC9DC00AEB09E /* ContentView.swift */,
+				88FF49CE2500987300B14A3F /* ContentView.swift */,
+				88FF49CD2500970B00B14A3F /* View */,
+				88FF49CC2500960700B14A3F /* Screen Components */,
+				88FF49CB250095EA00B14A3F /* Model */,
 				88C9912324FFC9F000AEB09E /* Assets.xcassets */,
 				88C9912824FFC9F000AEB09E /* LaunchScreen.storyboard */,
 				88C9912B24FFC9F000AEB09E /* Info.plist */,
@@ -76,6 +87,31 @@
 				88C9912624FFC9F000AEB09E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		88FF49CB250095EA00B14A3F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				88FF49C9250095A800B14A3F /* Settings.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		88FF49CC2500960700B14A3F /* Screen Components */ = {
+			isa = PBXGroup;
+			children = (
+				88FF49C525008F9900B14A3F /* TeamSizeCell.swift */,
+				88FF49C72500911E00B14A3F /* TeamSizeItem.swift */,
+			);
+			path = "Screen Components";
+			sourceTree = "<group>";
+		};
+		88FF49CD2500970B00B14A3F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				88C9912124FFC9DC00AEB09E /* MainScreen.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +185,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88FF49C82500911E00B14A3F /* TeamSizeItem.swift in Sources */,
 				88C9912024FFC9DC00AEB09E /* BrandMasterSUI.xcdatamodeld in Sources */,
+				88FF49CF2500987300B14A3F /* ContentView.swift in Sources */,
 				88C9911B24FFC9DC00AEB09E /* AppDelegate.swift in Sources */,
-				88C9912224FFC9DC00AEB09E /* ContentView.swift in Sources */,
+				88C9912224FFC9DC00AEB09E /* MainScreen.swift in Sources */,
+				88FF49CA250095A800B14A3F /* Settings.swift in Sources */,
+				88FF49C625008F9900B14A3F /* TeamSizeCell.swift in Sources */,
 				88C9911D24FFC9DC00AEB09E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
